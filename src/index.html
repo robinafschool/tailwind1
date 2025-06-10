@@ -7,7 +7,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#74C69D',
+              light: '#8ED5AF',
+              dark: '#5BB186',
+            },
+            secondary: '#212529',
+            white: '#FFFFFF',
+          },
+          fontFamily: {
+            sans: ['Work Sans', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif'],
+            crimson: ['Crimson Text', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
   <style>
     body {
       font-family: 'Work Sans', sans-serif;
